@@ -1,0 +1,20 @@
+            - name: Mattermost
+  # You may pin to the exact commit or the version.
+  # uses: mattermost/action-mattermost-notify@b7d118e440bf2749cd18a4a8c88e7092e696257a
+  uses: mattermost/action-mattermost-notify@2.0.0
+  with:
+    # The Mattermost Incoming Webhook URL
+    MATTERMOST_WEBHOOK_URL: 
+    # The Mattermost channel to sent the message
+    MATTERMOST_CHANNEL: # optional
+    # The Mattermost username shown in the webhook
+    MATTERMOST_USERNAME: # optional
+    # The Mattermost Icon URL for the webhook
+    MATTERMOST_ICON_URL: # optional
+    # The text for the webhook message
+    TEXT: # optional
+    # The payload for the webhook
+    PAYLOAD: # optional
+    # The payload file for the webhook
+    PAYLOAD_FILENAME: # optional, default is mattermost.json
+          
