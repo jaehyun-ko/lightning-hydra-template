@@ -16,14 +16,14 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@master
 
       - name: Find modified files
         id: file_changes
-        uses: trilom/file-changes-action@v1.2.4
+        uses: trilom/file-changes-action@vmaster
         with:
           output: " "
 
@@ -31,6 +31,6 @@ jobs:
         run: echo '${{ steps.file_changes.outputs.files}}'
 
       - name: Run pre-commits
-        uses: pre-commit/action@v2.0.3
+        uses: pre-commit/action@vmaster
         with:
           extra_args: --files ${{ steps.file_changes.outputs.files}}
