@@ -1,3 +1,4 @@
+name: mattermost-notify
 on: [push, pull_request]
 
 jobs:
