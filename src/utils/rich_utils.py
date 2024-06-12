@@ -1,3 +1,15 @@
+"""This module provides utilities for printing and enforcing configuration settings using the Rich
+library for structured output and interactive prompts for user input. It includes functions to
+display configuration trees and enforce the presence of tags in the configuration.
+
+Functions:
+    print_config_tree(cfg: DictConfig, print_order: Sequence[str], resolve: bool, save_to_file: bool) -> None:
+        Prints the contents of a DictConfig as a tree structure using the Rich library.
+
+    enforce_tags(cfg: DictConfig, save_to_file: bool) -> None:
+        Prompts the user to input tags from the command line if no tags are provided in the configuration.
+"""
+
 from pathlib import Path
 from typing import Sequence
 
