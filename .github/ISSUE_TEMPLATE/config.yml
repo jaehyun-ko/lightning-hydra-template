@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Data Issues
+    url: https://github.com/your-repo/issues/new?template=data_issue.md
+    about: Report issues related to data preprocessing, loading, or quality.
+  - name: Model Training Issues
+    url: https://github.com/your-repo/issues/new?template=training_issue.md
+    about: Report issues related to model training, such as convergence, overfitting, etc.
+  - name: Performance Issues
+    url: https://github.com/your-repo/issues/new?template=performance_issue.md
+    about: Report issues related to model performance, such as speed, accuracy, etc.
+  - name: Dependency/Environment Issues
+    url: https://github.com/your-repo/issues/new?template=dependency_issue.md
+    about: Report issues related to dependencies or environment setup.
+  - name: General Questions
+    url: https://github.com/your-repo/issues/new?template=general_question.md
+    about: Ask any general questions about the project.
